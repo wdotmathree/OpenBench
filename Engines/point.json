@@ -1,5 +1,5 @@
 {
-    "private" : true,
+    "private" : false,
     "nps"     : 800000,
     "source"  : "https://github.com/wdotmathree/point",
 
