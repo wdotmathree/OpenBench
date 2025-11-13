@@ -1,5 +1,6 @@
 *.pyc
 Client/*
+venv
 
 credentials
 credentials.*

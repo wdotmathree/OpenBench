@@ -1,0 +1,80 @@
+{
+    "private" : false,
+    "nps"     : 975000,
+    "source"  : "https://github.com/kodxity/RIPDANYA-ChessBot",
+
+    "build" : {
+        "path"      : "",
+        "compilers" : ["g++"],
+        "cpuflags"  : ["AVX2", "FMA", "POPCNT", "BMI2"],
+        "systems"   : ["Linux"]
+    },
+
+    "test_presets" : {
+
+        "default" : {
+            "base_branch"     : "main",
+            "book_name"       : "UHO_Lichess_4852_v1.epd",
+            "test_bounds"     : "[0.00, 10.0]",
+            "test_confidence" : "[0.1, 0.05]",
+            "win_adj"         : "movecount=4 score=600",
+            "draw_adj"        : "movenumber=40 movecount=8 score=40"
+        },
+
+        "STC" : {
+            "both_options"      : "Threads=1 Hash=32",
+            "both_time_control" : "8.0+0.08",
+            "workload_size"     : 32
+        },
+
+        "STC Regression" : {
+            "both_options"      : "Threads=1 Hash=32",
+            "both_time_control" : "8.0+0.08",
+            "workload_size"     : 32,
+            "test_bounds" 	: "[-10.0, 0.00]"
+        },
+
+        "Tiny" : {
+            "both_options"      : "Threads=1 Hash=4",
+            "both_time_control" : "8.0+0.08",
+            "workload_size"     : 32
+        },
+
+        "Tiny Regression" : {
+            "both_options"      : "Threads=1 Hash=4",
+            "both_time_control" : "8.0+0.08",
+            "workload_size"     : 32,
+            "test_bounds" 	: "[-10.0, 0.00]"
+        },
+
+        "Progtest" : {
+            "both_options"      : "Threads=1 Hash=32",
+            "both_time_control" : "8.0+0.08",
+            "workload_size"     : 32,
+	    "book_name"		: "8moves_v3.epd",
+	    "test_max_games"	: 3000
+        },
+
+        "Tiny Progtest" : {
+            "both_options"      : "Threads=1 Hash=4",
+            "both_time_control" : "8.0+0.08",
+            "workload_size"     : 32,
+	    "book_name"		: "8moves_v3.epd",
+	    "test_max_games"	: 3000
+        }
+    },
+
+    "tune_presets" : {
+
+        "default" : {
+            "book_name" : "UHO_Lichess_4852_v1.epd",
+            "win_adj"   : "movecount=3 score=400",
+            "draw_adj"  : "movenumber=40 movecount=8 score=10"
+        },
+
+        "STC" : {
+            "dev_options"      : "Threads=1 Hash=8",
+            "dev_time_control" : "10.0+0.10"
+	}
+    }
+}
