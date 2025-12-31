@@ -18,9 +18,10 @@
     ],
 
     "engines" : [
-	"PZChessBot",
+        "PZChessBot",
         "RIPDANYA",
-	"Stash",
-	"point"
+        "Stash",
+        "point",
+        "Tarnished"
     ]
 }
