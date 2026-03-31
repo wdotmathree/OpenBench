@@ -16,7 +16,9 @@
             "base_branch"     : "main",
             "book_name"       : "UHO_Lichess_4852_v1.epd",
             "test_bounds"     : "[0.00, 10.0]",
-            "test_confidence" : "[0.1, 0.05]"
+            "test_confidence" : "[0.1, 0.05]",
+            "win_adj"         : "None",
+            "draw_adj"         : "None"
         },
 
         "STC" : {

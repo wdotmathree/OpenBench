@@ -22,40 +22,40 @@
         },
 
         "STC" : {
-            "both_options"      : "Threads=1 Hash=32",
+            "both_options"      : "Threads=1 Hash=32 Quiet=true",
             "both_time_control" : "8.0+0.08",
             "workload_size"     : 32
         },
 
         "LTC" : {
-            "both_options"      : "Threads=1 Hash=128",
+            "both_options"      : "Threads=1 Hash=128 Quiet=true",
             "both_time_control" : "40.0+0.4",
             "workload_size"     : 8
         },
 
         "STC regression" : {
 	    "test_bounds"	: "[-5.0, 0.00]",
-            "both_options"      : "Threads=1 Hash=32",
+            "both_options"      : "Threads=1 Hash=32 Quiet=true",
             "both_time_control" : "8.0+0.08",
             "workload_size"     : 32
         },
 
         "LTC regression" : {
 	    "test_bounds"	: "[-5.0, 0.00]",
-            "both_options"      : "Threads=1 Hash=128",
+            "both_options"      : "Threads=1 Hash=128 Quiet=true",
             "both_time_control" : "40.0+0.4",
             "workload_size"     : 8
         },
 
         "STC Progtest" : {
-            "both_options"      : "Threads=1 Hash=32",
+            "both_options"      : "Threads=1 Hash=32 Quiet=true",
             "both_time_control" : "8.0+0.08",
             "workload_size"     : 32,
             "test_max_games"    : 3000
         },
 
         "LTC Progtest" : {
-            "both_options"      : "Threads=1 Hash=128",
+            "both_options"      : "Threads=1 Hash=128 Quiet=true",
             "both_time_control" : "40.0+0.4",
             "workload_size"     : 32,
             "test_max_games"    : 1000
