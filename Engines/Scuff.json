@@ -1,12 +1,12 @@
 {
     "private" : false,
-    "nps"     : 1500000,
-    "source"  : "https://github.com/kevlu8/PZChessBot",
+    "nps"     : 1800000,
+    "source"  : "https://github.com/kevlu8/Scuff",
 
     "build" : {
         "path"      : "",
         "compilers" : ["g++"],
-        "cpuflags"  : ["AVX2", "FMA", "POPCNT", "BMI2"],
+        "cpuflags"  : ["POPCNT", "BMI2"],
         "systems"   : ["Linux"]
     },
 
@@ -15,47 +15,47 @@
         "default" : {
             "base_branch"     : "main",
             "book_name"       : "UHO_Lichess_4852_v1.epd",
-            "test_bounds"     : "[0.00, 5.0]",
+            "test_bounds"     : "[0.00, 10.0]",
             "test_confidence" : "[0.1, 0.05]",
-            "win_adj"         : "movecount=4 score=600",
-            "draw_adj"        : "movenumber=40 movecount=8 score=40"
+            "win_adj"         : "None",
+            "draw_adj"        : "None"
         },
 
         "STC" : {
-            "both_options"      : "Threads=1 Hash=32",
+            "both_options"      : "Threads=1 Hash=32 Quiet=true",
             "both_time_control" : "8.0+0.08",
             "workload_size"     : 32
         },
 
         "LTC" : {
-            "both_options"      : "Threads=1 Hash=128",
+            "both_options"      : "Threads=1 Hash=128 Quiet=true",
             "both_time_control" : "40.0+0.4",
             "workload_size"     : 8
         },
 
         "STC regression" : {
-	    "test_bounds"	: "[-5.0, 0.00]",
-            "both_options"      : "Threads=1 Hash=32",
+	    "test_bounds"	: "[-10.0, 0.00]",
+            "both_options"      : "Threads=1 Hash=32 Quiet=true",
             "both_time_control" : "8.0+0.08",
             "workload_size"     : 32
         },
 
         "LTC regression" : {
-	    "test_bounds"	: "[-5.0, 0.00]",
-            "both_options"      : "Threads=1 Hash=128",
+	    "test_bounds"	: "[-10.0, 0.00]",
+            "both_options"      : "Threads=1 Hash=128 Quiet=true",
             "both_time_control" : "40.0+0.4",
             "workload_size"     : 8
         },
 
         "STC Progtest" : {
-            "both_options"      : "Threads=1 Hash=32",
+            "both_options"      : "Threads=1 Hash=32 Quiet=true",
             "both_time_control" : "8.0+0.08",
             "workload_size"     : 32,
             "test_max_games"    : 3000
         },
 
         "LTC Progtest" : {
-            "both_options"      : "Threads=1 Hash=128",
+            "both_options"      : "Threads=1 Hash=128 Quiet=true",
             "both_time_control" : "40.0+0.4",
             "workload_size"     : 32,
             "test_max_games"    : 1000
