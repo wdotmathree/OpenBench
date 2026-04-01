@@ -16,7 +16,8 @@
         "8moves_v3.epd",
         "UHO_Lichess_4852_v1.epd",
         "DFRC.epd",
-        "Endgames.epd"
+        "Endgames.epd",
+        "endgames_cdb95105.epd"
     ],
 
     "engines" : [
