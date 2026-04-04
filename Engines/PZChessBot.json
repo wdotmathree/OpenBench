@@ -73,6 +73,20 @@
         "STC" : {
             "dev_options"      : "Threads=1 Hash=8",
             "dev_time_control" : "10.0+0.10"
-	}
+	    }
+    },
+
+    "datagen_presets" : {
+        "default" : {
+            "genfens_args"  : "filter 1 nmoves 8",
+            "win_adj"       : "movecount=6 score=2000",
+            "draw_adj"      : "movenumber=40 movecount=8 score=10",
+            "workload_size" : 512
+        },
+
+        "5k Nodes" : {
+            "both_options"      : "Threads=1 Hash=16 Quiet=true softnodes=true",
+            "both_time_control" : "N=5000"
+        }
     }
 }
