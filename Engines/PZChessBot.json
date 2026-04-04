@@ -78,7 +78,6 @@
 
     "datagen_presets" : {
         "default" : {
-            "genfens_args"  : "filter 1 nmoves 8",
             "win_adj"       : "movecount=6 score=2000",
             "draw_adj"      : "movenumber=40 movecount=8 score=10",
             "workload_size" : 512
