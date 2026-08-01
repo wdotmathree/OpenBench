@@ -1,6 +1,6 @@
 {% load mytags %}
-<td><a href="/user/{{test.author}}">{{test.author|slice:":6"}}</a></td>
-<td>{{test.dev_engine|slice:":10"}}</td>
+<td><a href="/user/{{test.author}}">{{test.author|capfirst|slice:":6"}}</a></td>
+<td>{{test.dev_engine}}</td>
 <td>
     <a href="{{test|workload_url}}">{{test|prettyDevName}}</a>
     {% if test.error %} <span style="color: red; cursor: pointer" title="Crash or illegal move">*</span> {% endif %}
